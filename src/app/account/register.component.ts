@@ -53,7 +53,7 @@ export class RegisterComponent implements OnInit {
             .pipe(first())
             .subscribe({
                 next: (res: any) => {
-                    this.alertService.success('Registration successful, please check your email for verification instructions', { keepAfterRouteChange: true });
+                    this.alertService.success('Registration successful, you can now log in!', { keepAfterRouteChange: true });
                     
                     if (res && res.verificationLink) {
                         setTimeout(() => {
