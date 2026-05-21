@@ -30,8 +30,9 @@ import { HomeComponent } from './home';
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
         { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
 
-        // provider used to create fake backend
-        fakeBackendProvider
+        // ── STAGE A: Uncomment the line below to use the fake backend (no API needed) ──
+        // fakeBackendProvider
+        // ── STAGE B: Keep commented out to use the real Node.js API at localhost:4000 ──
     ],
     bootstrap: [AppComponent]
 })

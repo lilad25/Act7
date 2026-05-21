@@ -7,7 +7,7 @@ import { AlertService } from '@app/_services';
 import { Role } from '@app/_models';
 
 // array in local storage for accounts
-const accountsKey = 'angular-15-signup-verification-boilerplate-accounts';
+const accountsKey = 'lab7-auth-accounts';
 let accounts: any[] = JSON.parse(localStorage.getItem(accountsKey)!) || [];
 
 @Injectable()
